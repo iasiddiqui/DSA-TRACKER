@@ -1,9 +1,12 @@
 {
+  "homepage":"https://iasiddiqui.github.io/DSA-Tracker",
   "name": "dsa-tracker",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "vite build",
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
@@ -34,6 +37,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sonarjs": "^0.15.0",
+    "gh-pages": "^6.1.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "vite": "^3.1.0"

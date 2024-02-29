@@ -8,7 +8,7 @@ import chakraTheme from './chakraTheme.js'
 import DiffChecker from './components/common/DiffChecker.js'
 import ultimateData from './components/common/ultimateData.js'
 
-let fetchData = localStorage.getItem('A2Z_Archive')
+let fetchData = localStorage.getItem('DSA_Tracker')
 fetchData = fetchData === null ? ultimateData : JSON.parse(fetchData)
 fetchData = DiffChecker(ultimateData, fetchData)
 
