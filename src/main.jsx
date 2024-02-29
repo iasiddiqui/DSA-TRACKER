@@ -14,10 +14,12 @@ fetchData = DiffChecker(ultimateData, fetchData)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <ChakraProvider theme={chakraTheme}>
-            <HashRouter>
+        <HashRouter>
+            <ChakraProvider theme={chakraTheme}>
+
                 <App fetchData={fetchData} />
-            </HashRouter>
-        </ChakraProvider>
+
+            </ChakraProvider>
+        </HashRouter>
     </React.StrictMode>
 )
