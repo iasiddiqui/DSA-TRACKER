@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 import App from './App'
 import chakraTheme from './chakraTheme.js'
@@ -15,9 +15,9 @@ fetchData = DiffChecker(ultimateData, fetchData)
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <ChakraProvider theme={chakraTheme}>
-            <BrowserRouter>
+            <HashRouter>
                 <App fetchData={fetchData} />
-            </BrowserRouter>
+            </HashRouter>
         </ChakraProvider>
     </React.StrictMode>
 )
